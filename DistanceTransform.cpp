@@ -119,11 +119,11 @@ int main(int argc, char** argv){
 
     char *input_path = argv[1];
     unsigned int component_thresh = atoi(argv[2]);
-    char type = argv[3][0];
+    char type = toLowerCase(argv[3])[0];
     char *output_path = 0;
 
     if (argc == 5)output_path = argv[4];
-
+    
     //grayscalling 
     Mat original_image = imread(input_path, IMREAD_COLOR);
     Mat gray_image;
