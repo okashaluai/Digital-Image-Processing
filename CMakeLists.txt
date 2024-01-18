@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 2.8)
+project( DistanceTransform )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( DistanceTransform DistanceTransform.cpp )
+target_link_libraries( DistanceTransform ${OpenCV_LIBS} )
+
+cmake_minimum_required(VERSION 2.8)
+project( Histogram )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( Histogram Histogram.cpp )
+target_link_libraries( Histogram ${OpenCV_LIBS} )
