@@ -31,6 +31,7 @@ For the *signed distance transform*, I caculate both inner and outer distance ma
 
 # Gaussian Filtering 
 I calculate the filter kernel by iterating from 0 to desired kernel size and I substitute the index f(i - (kernel size) // 2, j - (kernel size) // 2), such that:
+
 $$ f(x,y)= {1 \over 2\pi\sigma} e^{- (x^2 + y^2) \over 2 \sigma^2} $$
 
 Then I have to normalize the filter kernel and make sure the sum of its elements equals to 1.\
